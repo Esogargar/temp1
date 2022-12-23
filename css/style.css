@@ -120,7 +120,7 @@ body {
 /* end header rules */
 /* start landing rule */
 .landing {
-background-image: url(../img/landing.jpg);
+background-image: url(../img/flights.jpg);
 background-size: cover;
 height: calc(100vh - 64px);
 position: relative;

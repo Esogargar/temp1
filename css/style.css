@@ -1,4 +1,7 @@
 /* start variables  */
+:root {
+    --main-color: #0478ef;
+}
 
 /* end variables  */
 /* start global rules  */
@@ -85,7 +88,7 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: #f6f6f6;
+    background-color: rgb(246 246 246 / 26%);
     position: absolute;
     right: 0;
     min-width: 200px;
@@ -115,30 +118,42 @@ body {
     transition: 0.3s;
 }
 .header .links ul li:not(:last-child) a {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #acc2d5;
 }
 /* end header rules */
 /* start landing rule */
 .landing {
-background-image: url(../img/flights.jpg);
-background-size: cover;
-height: calc(100vh - 64px);
-position: relative;
+    position: relative;
+    height: calc(100vh - 64px);
+    width: 100%;
+
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../img/flights.jpg);
+    background-size: cover;
+    opacity: 0.50;
+    box-shadow: 1px 9px 18px -4px rgba(111,111,143,0.67);
 }
 .landing .intro-text {
-position: absolute;
-text-align: center;
-top: 50%;
-left: 50%;
-transform: translate(-50% , -50%);
-width: 320px;
-max-width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 320px;
+    max-width: 100%;
 
 }
 .landing .intro-text h1{
    margin: 0; 
    font-weight: bold;
-   font-size: 50px;
+   font-size: 40px;
    color: var(--main-color);
 }
 .landing .intro-text p {
@@ -146,3 +161,32 @@ max-width: 100%;
     line-height: 1.8;
 }
 /* end landing rule  */
+/* start features rule */
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.features .contanier {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));    
+    gap: 20px;
+}
+.features .contanier .feature {
+    padding: 20px;
+    text-align: center;
+}
+.features .contanier .feature i {
+    color: var(--main-color);
+}
+.features .contanier .feature h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+.features .contanier .feature p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+
+/* end features rule*/

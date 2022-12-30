@@ -1,6 +1,7 @@
 /* start variables  */
 :root {
     --main-color: #0478ef;
+    --secondry-color: #3b4469;
 }
 
 /* end variables  */
@@ -224,5 +225,57 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
     gap: 30px;
+    margin-top: 100px;
 }
+.services .services-container .col .srv {
+    display: flex;
+    margin-bottom: 50px
+}
+@media (max-width: 767px) {
+    .services .services-container .col .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media (max-width: 1199px ) {
+    .services .services-container .col .image-column {
+        display: none;
+    }
+    
+}
+.services .services-container .col .srv i{
+    flex-basis: 60px;
+    color: var(--main-color);
+}
+.services .services-container .col .srv .text-container{
+    flex: 1;
+}
+.services .services-container .col .srv h3{
+    margin: 0 0 20px;
+}
+.services .services-container .col .srv p {
+    line-height: 1.6;
+    color: #777;
+    font-weight: 300;
+}
+.services .services-container  .image::before {
+    content: "";
+    background-color: var(--secondry-color);
+    width: 130px;
+    height: calc(100% + 97px);
+    top: -50px;
+    position: absolute;
+    right: -37px;
+    z-index: -1;
+}
+.services .services-container  .image {
+    text-align: center;
+    position: relative;
+
+}
+.services .services-container  .image img {
+    box-shadow: 14px 14px 28px #40486dc2, -14px -14px 28px #3c456a45;}
+
+
+
 /* end services rule  */

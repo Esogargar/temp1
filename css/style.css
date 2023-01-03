@@ -2,6 +2,8 @@
 :root {
     --main-color: #0478ef;
     --secondry-color: #3b4469;
+    --section-background: #f6f6f6;
+    --section-padding: 60px;
 }
 
 /* end variables  */
@@ -131,6 +133,10 @@ body {
     top: -20px;
 }
 
+.header .links:hover ul {
+    display: block;
+  }
+
 .header .links ul li:hover a {
     padding-left: 25px;
 }
@@ -148,23 +154,12 @@ body {
 /* end header rules */
 /* start landing rule */
 .landing {
-    position: relative;
-    height: calc(100vh - 64px);
-    width: 100%;
-
-}
-.landing::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-image: url(../img/flights.jpg);
+    background-image: url(../img/landing.jpg);
     background-size: cover;
-    opacity: 0.50;
-    box-shadow: 1px 9px 18px -4px rgba(111,111,143,0.67);
-}
+    height: calc(100vh - 64px);
+    position: relative;
+  }
+
 .landing .intro-text {
     position: absolute;
     text-align: center;
@@ -188,13 +183,13 @@ body {
 /* end landing rule  */
 /* start features rule */
 .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #f6f6f6;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
 }
 .features .contanier {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));    
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
     gap: 20px;
 }
 .features .contanier .feature {
@@ -218,8 +213,8 @@ body {
 
 /* start services rule  */
 .services {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 .services .services-container {
     display: grid;
@@ -261,11 +256,11 @@ body {
 .services .services-container  .image::before {
     content: "";
     background-color: var(--secondry-color);
-    width: 130px;
-    height: calc(100% + 97px);
+    width: 100px;
+    height: calc(100% + 100px);
     top: -50px;
     position: absolute;
-    right: -37px;
+    right: 0;
     z-index: -1;
 }
 .services .services-container  .image {
@@ -274,8 +269,28 @@ body {
 
 }
 .services .services-container  .image img {
-    box-shadow: 14px 14px 28px #40486dc2, -14px -14px 28px #3c456a45;}
-
-
+    box-shadow: 14px 14px 28px #40486dc2, -14px -14px 28px #3c456a45;
+    width: 260px;
+}
 
 /* end services rule  */
+/* start portiflio rule */
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+
+}
+.portfolio .portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
+    gap: 30px;
+    margin-top: 100px;
+}
+.portfolio .portfolio-content .card {
+    background-color: white;
+}
+.portfolio .portfolio-content .card img {
+    max-width: 100%;
+}
+/* end portiflio rule */

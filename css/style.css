@@ -187,23 +187,23 @@ body {
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
 }
-.features .contanier {
+.features .container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
     gap: 20px;
 }
-.features .contanier .feature {
+.features .container .feature {
     padding: 20px;
     text-align: center;
 }
-.features .contanier .feature i {
+.features .container .feature i {
     color: var(--main-color);
 }
-.features .contanier .feature h3 {
+.features .container .feature h3 {
     font-weight: 800;
     margin: 30px 0;
 }
-.features .contanier .feature p {
+.features .container .feature p {
     line-height: 1.8;
     color: #777;
     font-size: 17px;
@@ -286,6 +286,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));    
     gap: 30px;
     margin-top: 100px;
+
 }
 .portfolio .portfolio-content .card {
     background-color: white;
@@ -293,4 +294,19 @@ body {
 .portfolio .portfolio-content .card img {
     max-width: 100%;
 }
+.portfolio .portfolio-content .card .info  {
+    padding: 20px;
+}
+.portfolio .portfolio-content .card .info  p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+@media (max-width: 767px) {
+    .portfolio .portfolio-content .card {
+        text-align: center;
+    }
+}
+
+
 /* end portiflio rule */

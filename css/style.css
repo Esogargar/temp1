@@ -271,6 +271,16 @@ body {
 .services .services-container  .image img {
     box-shadow: 14px 14px 28px #40486dc2, -14px -14px 28px #3c456a45;
     width: 260px;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.services .services-container  .image img:hover {
+    -webkit-filter: brightness(100%);
+
 }
 
 /* end services rule  */

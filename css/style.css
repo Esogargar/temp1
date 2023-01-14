@@ -316,6 +316,7 @@ body {
     line-height: 1.8;
     color: #777;
     font-size: 17px;
+    margin-bottom: 0 ;
 }
 @media (max-width: 767px)  {
     .portfolio .portfolio-content .card {
@@ -326,3 +327,9 @@ body {
 
 
 /* end portiflio rule */
+/* start about rule */
+.about {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+/* end about rule */

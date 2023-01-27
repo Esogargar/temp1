@@ -416,3 +416,63 @@ height: 375px;
 
 
 /* end about rule */
+/* start contact rule */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.contact .contact-content {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+.contact .contact-content  .lable{
+   font-size: 30px;
+   font-weight: 800;
+   color: var(--secondry-color);
+   letter-spacing: -2px;
+   margin-bottom: 15px;
+
+}
+.contact .contact-content .link {
+    display: block;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.contact .contact-content .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.contact .contact-content .social  i {
+    margin-left: 10px;
+    color: var(--secondry-color);
+}
+@media (max-width: 767px) {
+    .contact .contact-content .lable,
+    .contact .contact-content .link {
+        font-size: 25px;
+    }
+
+}
+/* End contact rule */
+/* start footer */
+.footer {
+    background-color: var(--secondry-color);
+    color: white;
+    padding: 30px 10px;
+    font-size: 18px;
+    text-align: center;
+}
+.footer span {
+    font-weight: bold;
+    color: var(--main-color);
+}
+.footer .colorRed {
+    color: red;
+}
+/* end footer */

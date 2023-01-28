@@ -473,6 +473,22 @@ height: 375px;
 
 }
 /* End contact rule */
+/* start go to-top buutom */
+.gotopbtn
+{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 25px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 60px;
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+/* end go to-top buutom */
 /* start footer */
 .footer {
     background-color: var(--secondry-color);
